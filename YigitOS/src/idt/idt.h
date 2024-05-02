@@ -13,7 +13,7 @@ struct InterruptDescriptor32 {
    uint16_t offset_2;        // offset bits 16..31
 }__attribute__((packed));
 
-struct InterruptDescriptor32_register {
+struct InterruptDescriptor32_R {
    uint16_t limit;        // offset bits 0..15
    uint32_t base;
 }__attribute__((packed));

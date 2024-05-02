@@ -4,9 +4,9 @@
 #include "memory/memory.h"
 
 struct InterruptDescriptor32 idt_descriptors[YIGITOS_TOTAL_INTERRUPTS];
-struct InterruptDescriptor32_register idtr_descriptor;
+struct InterruptDescriptor32_R idtr_descriptor;
 
-extern void idt_load(struct InterruptDescriptor32_register* ptr);
+extern void idt_load(struct InterruptDescriptor32_R* ptr);
 
 void idt_zero()
 {
